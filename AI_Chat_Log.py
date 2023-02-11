@@ -1,6 +1,6 @@
 def AI_Chat_Log():
     question = input("Question: ")
-    answer = input(f"{question}\nAnswer")
+    answer = input(f"Answer this question [{question}]\nAnswer: ")
     FileLog = open("AI_Chat_Log.txt", "r")
     chat_log_template = FileLog.read()
     chat_log_template_update = chat_log_template + f"\nYou : {question}\nAI  : {answer}"
